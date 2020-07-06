@@ -8,6 +8,9 @@ window.geometry('440x530')
 textView=Entry(window,width=50,borderwidth=5)
 textView.place(x=17,y=10)
 
+global operant
+operant=NONE
+
 
 def buttonPress( text):
     textView.insert(END,text)
@@ -55,9 +58,6 @@ def division():
 
 
 def equal():
-    operant==""
-
-
     
     if(operant=="+"):
         sum=number1+float(textView.get()) 
